@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ScrollView" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8ML-kZ-PVV">
+                                <rect key="frame" x="0.0" y="64" width="414" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Gpv-8U-4fF"/>
+                                </constraints>
+                                <state key="normal" title="1. UIScrollView in safe area"/>
+                                <connections>
+                                    <segue destination="Cuw-Ea-3l4" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="zpy-ao-aoS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aXS-bC-nOW">
+                                <rect key="frame" x="0.0" y="124" width="414" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="KNh-hh-nsr"/>
+                                </constraints>
+                                <state key="normal" title="2. UIScrollView in full screen"/>
+                                <connections>
+                                    <segue destination="itk-OG-jNB" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="kJg-Oy-fui"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oo7-4P-kXF">
+                                <rect key="frame" x="120" y="184" width="174" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="cc1-5B-rdC"/>
+                                </constraints>
+                                <state key="normal" title="3. UIScrollView with code"/>
+                                <connections>
+                                    <segue destination="z4A-AO-AVa" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="O28-2b-VoT"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="8ML-kZ-PVV" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="6Qj-zQ-2aZ"/>
+                            <constraint firstItem="aXS-bC-nOW" firstAttribute="top" secondItem="8ML-kZ-PVV" secondAttribute="bottom" constant="30" id="DXC-3i-HGk"/>
+                            <constraint firstItem="oo7-4P-kXF" firstAttribute="top" secondItem="aXS-bC-nOW" secondAttribute="bottom" constant="30" id="Lfa-RL-3LU"/>
+                            <constraint firstItem="aXS-bC-nOW" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" id="O1A-CR-ohz"/>
+                            <constraint firstItem="8ML-kZ-PVV" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Ph2-v7-ju0"/>
+                            <constraint firstItem="8ML-kZ-PVV" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" id="ZWp-yB-BZ8"/>
+                            <constraint firstItem="oo7-4P-kXF" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="ijn-3k-SsQ"/>
+                            <constraint firstItem="aXS-bC-nOW" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="usD-9Z-h69"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="138.61607142857142"/>
+        </scene>
+        <!--View Controller3-->
+        <scene sceneID="gsh-P7-rQ4">
+            <objects>
+                <viewController id="z4A-AO-AVa" customClass="ViewController3" customModule="ScrollView" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6LU-9Q-x35">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Klu-9T-GoU">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <gestureRecognizers/>
+                                <viewLayoutGuide key="contentLayoutGuide" id="dTD-vN-pJZ"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="K36-QQ-7mP"/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="Jac-L8-IDi" appends="YES" id="bc6-qh-e1g"/>
+                                </connections>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Klu-9T-GoU" firstAttribute="width" secondItem="dBC-84-A2H" secondAttribute="width" id="89B-Zl-7da"/>
+                            <constraint firstItem="Klu-9T-GoU" firstAttribute="top" secondItem="dBC-84-A2H" secondAttribute="top" id="E2J-aZ-hSW"/>
+                            <constraint firstItem="Klu-9T-GoU" firstAttribute="height" secondItem="dBC-84-A2H" secondAttribute="height" id="NMZ-HZ-7Pc"/>
+                            <constraint firstItem="Klu-9T-GoU" firstAttribute="trailing" secondItem="dBC-84-A2H" secondAttribute="trailing" id="QV5-x8-WVD"/>
+                            <constraint firstItem="Klu-9T-GoU" firstAttribute="bottom" secondItem="dBC-84-A2H" secondAttribute="bottom" id="a7E-VU-gfX"/>
+                            <constraint firstItem="Klu-9T-GoU" firstAttribute="leading" secondItem="dBC-84-A2H" secondAttribute="leading" id="dhv-zb-YqM"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="dBC-84-A2H"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="3Ch-Rl-yh5"/>
+                    <connections>
+                        <outlet property="scrollView" destination="Klu-9T-GoU" id="Mdd-I9-bNg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0fn-WB-uSV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="Jac-L8-IDi">
+                    <connections>
+                        <action selector="tappedViewWithSender:" destination="z4A-AO-AVa" id="pwY-kM-5fF"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1789.8550724637682" y="924.77678571428567"/>
+        </scene>
+        <!--View Controller1-->
+        <scene sceneID="Bs5-te-X0H">
+            <objects>
+                <viewController id="Cuw-Ea-3l4" customClass="ViewController1" customModule="ScrollView" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5KT-et-Bwa">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uXX-Dg-rRc">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="top of view" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UCq-pW-fRS">
+                                        <rect key="frame" x="0.0" y="20" width="414" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="p6e-kQ-lUR"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="bottom of view" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oxJ-Lr-Z7I">
+                                        <rect key="frame" x="150" y="1041" width="114.5" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="4qF-Ya-Cps"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemGray6Color" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstItem="UCq-pW-fRS" firstAttribute="leading" secondItem="uXX-Dg-rRc" secondAttribute="leading" id="8L9-eU-a65"/>
+                                    <constraint firstItem="oxJ-Lr-Z7I" firstAttribute="top" secondItem="UCq-pW-fRS" secondAttribute="bottom" constant="1000" id="Lfj-2I-gar"/>
+                                    <constraint firstAttribute="trailing" secondItem="UCq-pW-fRS" secondAttribute="trailing" id="UTj-Ko-EOe"/>
+                                    <constraint firstAttribute="bottom" secondItem="oxJ-Lr-Z7I" secondAttribute="bottom" constant="20" id="XKU-4Z-vZd"/>
+                                    <constraint firstItem="UCq-pW-fRS" firstAttribute="width" secondItem="uXX-Dg-rRc" secondAttribute="width" id="biU-Yd-zf7"/>
+                                    <constraint firstItem="UCq-pW-fRS" firstAttribute="top" secondItem="uXX-Dg-rRc" secondAttribute="top" constant="20" id="pnk-yD-wrw"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="a5s-Ci-F9S"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="JFT-6J-Uih"/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="5nh-C3-pox" appends="YES" id="Q1C-2p-8Dl"/>
+                                </connections>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="uXX-Dg-rRc" firstAttribute="width" secondItem="qTK-VM-UR6" secondAttribute="width" id="HdI-G7-Sq0"/>
+                            <constraint firstItem="qTK-VM-UR6" firstAttribute="bottom" secondItem="uXX-Dg-rRc" secondAttribute="bottom" id="MER-Gg-1s3"/>
+                            <constraint firstItem="uXX-Dg-rRc" firstAttribute="top" secondItem="qTK-VM-UR6" secondAttribute="top" id="YR8-3U-zFJ"/>
+                            <constraint firstItem="uXX-Dg-rRc" firstAttribute="trailing" secondItem="qTK-VM-UR6" secondAttribute="trailing" id="bOI-9q-c9V"/>
+                            <constraint firstItem="uXX-Dg-rRc" firstAttribute="leading" secondItem="qTK-VM-UR6" secondAttribute="leading" id="jR3-aw-aft"/>
+                            <constraint firstItem="uXX-Dg-rRc" firstAttribute="height" secondItem="qTK-VM-UR6" secondAttribute="height" id="jeF-mI-ERU"/>
+                            <constraint firstItem="oxJ-Lr-Z7I" firstAttribute="centerX" secondItem="qTK-VM-UR6" secondAttribute="centerX" id="t53-EZ-gkQ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="qTK-VM-UR6"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="o5g-Mb-MAB"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Oz3-kE-zgw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="5nh-C3-pox">
+                    <connections>
+                        <action selector="tappedViewWithSender:" destination="Cuw-Ea-3l4" id="1i3-tB-ST5"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="138" y="926"/>
+        </scene>
+        <!--View Controller2-->
+        <scene sceneID="MXU-2b-F8C">
+            <objects>
+                <viewController id="itk-OG-jNB" customClass="ViewController2" customModule="ScrollView" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8Qj-Uh-mKz">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YxU-HX-kfh">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="top of view" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RoK-ys-Lgf">
+                                        <rect key="frame" x="0.0" y="100" width="414" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="scW-pB-npO"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="bottom of view" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ztg-bF-7nL">
+                                        <rect key="frame" x="41.5" y="1121" width="331" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="RoK-ys-Lgf" secondAttribute="trailing" id="7Fs-bz-Cvv"/>
+                                    <constraint firstItem="ztg-bF-7nL" firstAttribute="width" secondItem="YxU-HX-kfh" secondAttribute="width" multiplier="0.8" id="C6R-6A-Xg1"/>
+                                    <constraint firstItem="RoK-ys-Lgf" firstAttribute="leading" secondItem="YxU-HX-kfh" secondAttribute="leading" id="EXo-wV-Jhn"/>
+                                    <constraint firstItem="RoK-ys-Lgf" firstAttribute="width" secondItem="YxU-HX-kfh" secondAttribute="width" id="Pvv-NT-8d9"/>
+                                    <constraint firstItem="RoK-ys-Lgf" firstAttribute="top" secondItem="YxU-HX-kfh" secondAttribute="top" constant="100" id="QIy-vc-QQT"/>
+                                    <constraint firstItem="ztg-bF-7nL" firstAttribute="top" secondItem="RoK-ys-Lgf" secondAttribute="bottom" constant="1000" id="Vok-Yv-qHW"/>
+                                    <constraint firstItem="ztg-bF-7nL" firstAttribute="centerX" secondItem="YxU-HX-kfh" secondAttribute="centerX" id="pHf-mS-jr3"/>
+                                    <constraint firstAttribute="bottom" secondItem="ztg-bF-7nL" secondAttribute="bottom" constant="20" id="zX3-Lb-CfC"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="VIg-fB-as6"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="kTY-Dz-s4d"/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="88k-XW-sku" appends="YES" id="Y2D-Zq-C5W"/>
+                                </connections>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="YxU-HX-kfh" secondAttribute="bottom" id="LJV-St-hS1"/>
+                            <constraint firstAttribute="trailing" secondItem="YxU-HX-kfh" secondAttribute="trailing" id="h0Q-gM-b2I"/>
+                            <constraint firstItem="YxU-HX-kfh" firstAttribute="top" secondItem="8Qj-Uh-mKz" secondAttribute="top" id="lFS-gf-x88"/>
+                            <constraint firstItem="YxU-HX-kfh" firstAttribute="leading" secondItem="8Qj-Uh-mKz" secondAttribute="leading" id="yQl-kH-qKZ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="CnO-V5-KqV"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="CMA-du-bP5"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pEc-UK-Aeq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="88k-XW-sku">
+                    <connections>
+                        <action selector="tappedViewWithSender:" destination="itk-OG-jNB" id="ppI-69-et5"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1009" y="926"/>
+        </scene>
+    </scenes>
+</document>
